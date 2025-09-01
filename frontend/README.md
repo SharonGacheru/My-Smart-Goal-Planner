@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Goal Planner
 
 Smart Goal Planner is a web application to help you track and manage your savings goals.  
@@ -78,3 +79,6 @@ npm install react-scripts --save
 ```
 
 Then try `npm start` again.
+=======
+
+>>>>>>> 25c56e8a005bc3f207007b5e0eb8b2247e527ba4
