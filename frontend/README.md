@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Smart Goal Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Smart Goal Planner is a web application to help you track and manage your savings goals.  
+You can create, view, update, and delete financial goals, monitor your progress, and visualize your savings journey.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new savings goals with target amount, category, and deadline
+- Track saved and remaining amounts for each goal
+- Deposit money towards goals
+- Visual progress bars and status indicators (completed, warning, overdue)
+- Overview dashboard with total stats
 
-### `npm start`
+## How to Run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Install dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open a terminal in the `frontend` directory and run:
 
-### `npm test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Start the backend (JSON server)
 
-### `npm run build`
+Open a second terminal in the `frontend` directory and run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npx json-server --watch ../backend/db.json --port 3001
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start a mock backend API at `http://localhost:3001`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Start the frontend React app
 
-### `npm run eject`
+In the `frontend` directory, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will open the app at [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Add a new goal using the form at the top.
+- View all your goals in the dashboard.
+- Click "Deposit" on a goal to add money towards it.
+- Click "Delete" to remove a goal.
+- The overview section shows total goals, saved amount, targets, and status counts.
 
-## Learn More
+## Troubleshooting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you see the error `'react-scripts' is not recognized as an internal or external command` when running `npm start`, run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm install react-scripts --save
+```
 
-### Code Splitting
+Then try `npm start` again.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you see ESLint errors about missing configs, run:
 
-### Analyzing the Bundle Size
+```
+npm install --save-dev eslint-config-react-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+- `src/` - React frontend code
+- `backend/db.json` - Mock database for JSON server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+MIT
+```
+npm install react-scripts --save
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Then try `npm start` again.

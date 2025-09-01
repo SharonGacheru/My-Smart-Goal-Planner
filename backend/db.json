@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Travel Fund - Japan",
       "targetAmount": 5000,
-      "savedAmount": 4200,
+      "savedAmount": 4220,
       "category": "Travel",
       "deadline": "2025-12-31",
       "createdAt": "2024-01-15"
@@ -49,9 +49,18 @@
       "id": "8b32",
       "name": "Hair Maintenance ",
       "targetAmount": 500,
-      "savedAmount": 20,
+      "savedAmount": 35,
       "category": "Personal ",
       "deadline": "2025-09-08",
+      "createdAt": "2025-09-01"
+    },
+    {
+      "id": "aa64",
+      "name": "Pet Maintenance  ",
+      "targetAmount": 100,
+      "savedAmount": 10,
+      "category": "Personal ",
+      "deadline": "2025-09-09",
       "createdAt": "2025-09-01"
     }
   ]
