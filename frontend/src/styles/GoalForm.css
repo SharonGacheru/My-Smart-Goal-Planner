@@ -1,0 +1,33 @@
+.goal-form {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 18px 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(79,140,255,0.07);
+  align-items: center;
+}
+.goal-form input {
+  padding: 9px 12px;
+  border-radius: 7px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  background: #f8fafc;
+  font-weight: 500;
+}
+.goal-form button {
+  padding: 9px 20px;
+  border-radius: 7px;
+  border: none;
+  background: linear-gradient(90deg, #4f8cff 0%, #6dd5ed 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.goal-form button:hover {
+  background: linear-gradient(90deg, #357ae8 0%, #4f8cff 100%);
+}
